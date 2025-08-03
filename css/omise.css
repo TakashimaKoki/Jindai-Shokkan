@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+
+/*-----omise-----*/
+
+.insta {
+	float: right;
+	height: 8vw;
+	width: 8vw;
+	margin-top: 2vw;
+}
+
+.picture1 {
+	vertical-align: bottom;
+	line-height: 0px;
+	margin: 10px 15px 10px 15px;
+	border: 7px solid #fff;
+}
+
+.pictere2 {
+	vertical-align: bottom;
+	line-height: 0px;
+	margin: 50px 15px 10px 15px;
+	border: 7px solid #fff;
+}
+
+.contents {
+	margin-bottom: 40px;
+}
+
+.content_name {
+	height: 6vw;
+	width: auto;
+}
+
+.tag_contents{ /* タグ */
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+
+.contents div {
+	margin-left: 6%;
+}
+
+.contents p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	font-size: 3.5vw;
+	line-height: 1.5em;
+}
+
+.map {	/* マップ */
+	width: 95%;
+	height: 200px;
+	position: relative;
+	padding-top: 1px;
+	margin-bottom: 20px;
+}
+.map iframe { /* マップ枠 */
+	top: 0;
+	right: 0;
+	width: 94%;
+	height: 100%;
+	border: 3px solid #fff;
+}
+
+.tag { /* お店検索タグ */
+	display: inline-block;
+	margin: 0 0.3em 0.4em;
+	padding: 0.3em 0.5em;
+	line-height: 1;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #887a6f;
+	border: 1px solid #554132;
+	border-left: 5px solid #554132;
+}
+
+.price {
+	margin-left: 15px;
+}
+
+.etc {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	align-items: flex-end;
+}

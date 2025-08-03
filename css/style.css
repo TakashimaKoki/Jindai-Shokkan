@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+
+
+/*-----reset-----*/
+html, p, h1, h2, ul {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 4vw;
+}
+
+h1 {
+	height: 8vw;
+	font-size: 8vw;
+	margin: 0;
+}
+
+
+.right {
+	text-align: right;
+}
+
+.flex {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+
+
+/*-----common-----*/
+.none {
+	display: none;
+}
+
+body {
+	display: block;
+    background-color: #554132;
+	margin: 0;
+	padding: 0;
+	font-family: "游明朝", "游明朝体", "Hiragino Mincho ProN", "Times New Roman", Arial, serif;
+}
+
+.page {
+	background-color: #d4c1b3;
+	min-height: 100vh;
+	position: relative;
+	padding-top: 10vh;
+	padding-bottom: 5em;
+	box-sizing: border-box;
+}
+
+header {
+	position: absolute;
+	top: 0;
+    background-color:  #554132;
+	height: 6vh;
+	width: 100%;
+	padding: 2vh 0;
+	color: #fff;
+}
+
+.title_logo {
+	height: 6vh;
+	padding-left: 20px;
+	float: left;
+	margin: auto;
+}
+
+.home_logo {
+	margin-right: 10px;
+	width: 6vh;
+	height: 50px;
+	float: right;
+}
+
+.search_logo {
+	margin-right: 10px;
+	width: 60px;
+	height: 50px;
+	float: right;
+}
+ 
+main {
+	width: 100%;
+	font-size: 5vw;
+	color: #000000;
+}
+ 
+footer {
+	position: absolute;
+	bottom: 0;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	height: 5em;
+	width: 100%;
+    background-color: #554132;
+	color: #fff;
+	text-align: center;
+}
+
+footer p {
+	margin: auto;
+	font-size: 3vw;
+}
+
+.layout {
+	padding: 5vw;
+}
+
+.title {
+	/* position: absolute; */
+	height: 10vw;
+	width: 90vw;
+}
+
+.title2 {
+	/* position: absolute; */
+	height: 16vw;
+	width: 90vw;
+}
+
+.title_junbi {
+	height: 54px;
+}
+
+.point {
+	float: left;
+	height: 8vw;
+	width: 8vw;
+	margin-top: 2vw;
+}
+
+.page_name{
+	float: left;
+	height: 10vw;
+	width: 74vw;
+}

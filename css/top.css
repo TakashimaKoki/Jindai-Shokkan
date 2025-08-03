@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+
+/*-----JEnD-----*/
+.top {
+	background: url(../img/background_1.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.top_message {
+	width: 85vw;
+	margin: 150px auto;
+}
+
+.howtouse {
+	width: 90vw;
+	margin: auto;
+}
+ 
+.to_question {
+	margin: 50px 25vw 100px 25vw;
+}
+
+.question_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	width: 50vw;
+	background-color: #554132;
+	border-bottom: solid 6px #000;
+	border-radius: 9px;
+}
+
+.question_button p {
+	display: block;
+	color: #fff;
+}
+
+/* .tagbook {
+	background: url(../img/tagbook.png) no-repeat;
+	background-size: cover;
+	height: 250px;
+	width: 100vw;
+	margin: 100px 0;
+}
+
+.tagbook p {
+	writing-mode: vertical-rl;
+	font-size: 2em;
+	color: #554132;
+	text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF,  0-1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.book1 {
+	float: left;
+	height: 145px;
+	width: 10vw;
+	margin-top: 75px;
+	padding: 0px 5vw 30px;
+}
+
+.book2 {
+	float: left;
+	height: 170px;
+	width: 10vw;
+	margin-top: 50px;
+	padding: 0px 5vw 30px;
+}
+
+.book3 {
+	float: left;
+	height: 220px;
+	width: 10vw;
+	margin-top: 0px;
+	padding: 0px 5vw 30px;
+} */
+ 
+.new_post {
+	text-align: center;
+    height: 200px;
+	margin: 4em auto;
+	padding: 1em 1em;
+}
+
+.new_post p {
+	margin: 1em 0;
+}
+
+.posts {
+	border: 2px solid #000;
+	padding: 0.5em 1em;
+	text-align: left;
+}

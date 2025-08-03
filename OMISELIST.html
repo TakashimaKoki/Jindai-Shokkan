@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>神大食鑑　OMISELIST</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/tag.css" rel="stylesheet">
+	<script src="jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+	<div class="page">
+		<header>
+			<div class="title_logo">
+				<a  href="JEnD.html">
+					<img src="img/title_logo.png" alt="神大食鑑" height="100%">
+				</a>
+			</div>
+			<!-- <div  class="home_logo">
+				<a href="JEnD.html">
+					<img src="img/home_logo.png" alt="home" width="56px" height="45px">
+				</a>
+			</div>
+			<div class="search_logo">
+				<a href="OMISELIST.html">
+					<img src="img/search_logo.png" alt="search" width="56px" height="45px">
+				</a>
+			</div> -->
+		</header>
+
+		<main>
+			<div class="layout">
+				<div class="title">
+					<img src="img/tenmei_point.png" class="point" alt="▶︎">
+					<div class="page_name">
+						<h1>タグ検索</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="taglines">
+				<div class="tagline">
+
+					<input type="radio" id="senenika" name="senenika" onchange="tag_effect('senenika')">
+					<label for="senenika" class="tag_design">千円以下</label>
+
+					<input type="radio" id="ekichika" name="ekichika" onchange="tag_effect('ekichika')">
+					<label for="ekichika" class="tag_design">駅近</label>
+
+					<input type="radio" id="ku" name="ku" onchange="tag_effect('ku')">
+					<label for="ku" class="tag_design">学校近く</label>
+
+					<input type="radio" id="volume" name="volume" onchange="tag_effect('volume')">
+					<label for="volume" class="tag_design">ボリューム</label>
+
+					<input type="radio" id="hitoridemo" name="hitoridemo" onchange="tag_effect('hitoridemo')">
+					<label for="hitoridemo" class="tag_design">一人でも</label>
+
+					<input type="radio" id="takeout" name="takeout" onchange="tag_effect('takeout')">
+					<label for="takeout" class="tag_design">テイクアウト</label>
+
+					<input type="radio" id="ramen" name="ramen" onchange="tag_effect('ramen')">
+					<label for="ramen" class="tag_design">ラーメン</label>
+
+					<input type="radio" id="minnademo" name="minnademo" onchange="tag_effect('minnademo')">
+					<label for="minnademo" class="tag_design">みんなでも</label>
+
+					<input type="radio" id="dinner" name="dinner" onchange="tag_effect('dinner')">
+					<label for="dinner" class="tag_design">ディナー</label>
+
+					<input type="radio" id="rice" name="rice" onchange="tag_effect('rice')">
+					<label for="rice" class="tag_design">米</label>
+
+					<input type="radio" id="noodle" name="noodle" onchange="tag_effect('noodle')">
+					<label for="noodle" class="tag_design">麺</label>
+
+					<input type="radio" id="youshoku" name="youshoku" onchange="tag_effect('youshoku')">
+					<label for="youshoku" class="tag_design">洋食</label>
+
+					<input type="radio" id="keishoku" name="keishoku" onchange="tag_effect('keishoku')">
+					<label for="keishoku" class="tag_design">軽食</label>
+
+					<input type="radio" id="dessert" name="dessert" onchange="tag_effect('dessert')">
+					<label for="dessert" class="tag_design">デザート</label>
+
+					<input type="radio" id="forgirl" name="forgirl" onchange="tag_effect('forgirl')">
+					<label for="forgirl" class="tag_design">女子向け</label>
+
+					<input type="radio" id="washoku" name="washoku" onchange="tag_effect('washoku')">
+					<label for="washoku" class="tag_design">和食</label>
+
+					<!-- <input type="radio" id="asia" name="asia" onchange="tag_effect('asia')">
+					<label for="asia" class="tag_design">アジア</label> -->
+
+					<input type="radio" id="speed" name="speed" onchange="tag_effect('speed')">
+					<label for="speed" class="tag_design">スピード重視</label>
+
+					<input type="radio" id="kodawari" name="kodawari" onchange="tag_effect('kodawari')">
+					<label for="kodawari" class="tag_design">こだわり</label>
+
+					<!-- <input type="radio" id="cashless" name="cashless" onchange="tag_effect('cashless')">
+					<label for="cashless" class="tag_design">キャッシュレス</label> -->
+
+					<input type="radio" id="tukemen" name="tukemen" onchange="tag_effect('tukemen')">
+					<label for="tukemen" class="tag_design">つけ麺</label>
+
+					<!-- <input type="radio" id="chinese" name="chinese" onchange="tag_effect('chinese')">
+					<label for="chinese" class="tag_design">中華</label> -->
+
+					<input type="radio" id="cafe" name="cafe" onchange="tag_effect('cafe')">
+					<label for="cafe" class="tag_design">カフェ</label>
+
+					<!-- <input type="radio" id="izakaya" name="izakaya" onchange="tag_effect('izakaya')">
+					<label for="izakaya" class="tag_design">大人の料理</label> -->
+
+					<!-- <input type="radio" id="bread" name="bread" onchange="tag_effect('bread')">
+					<label for="bread" class="tag_design">パン</label> -->
+
+					<!-- <input type="radio" id="" name="" onchange="tag_effect('')">
+					<label for="" class="tag_design"></label> -->
+
+				</div>
+
+				<div class="tagline">
+
+					<input type="radio" id="senenika_checked" name="senenika" onchange="tag_effect('senenika')" checked>
+					<label for="senenika_checked" class="tag_design checked">千円以下</label>
+
+					<input type="radio" id="ekichika_checked" name="ekichika" onchange="tag_effect('ekichika')" checked>
+					<label for="ekichika_checked" class="tag_design checked">駅近</label>
+
+					<input type="radio" id="ku_checked" name="ku" onchange="tag_effect('ku')" checked>
+					<label for="ku_checked" class="tag_design checked">学校近く</label>
+
+					<input type="radio" id="volume_checked" name="volume" onchange="tag_effect('volume')" checked>
+					<label for="volume_checked" class="tag_design checked">ボリューム</label>
+
+					<input type="radio" id="hitoridemo_checked" name="hitoridemo" onchange="tag_effect('hitoridemo')" checked>
+					<label for="hitoridemo_checked" class="tag_design checked">一人でも</label>
+
+					<input type="radio" id="takeout_checked" name="takeout" onchange="tag_effect('takeout')" checked>
+					<label for="takeout_checked" class="tag_design checked">テイクアウト</label>
+
+					<input type="radio" id="ramen_checked" name="ramen" onchange="tag_effect('ramen')" checked>
+					<label for="ramen_checked" class="tag_design checked">ラーメン</label>
+
+					<input type="radio" id="minnademo_checked" name="minnademo" onchange="tag_effect('minnademo')" checked>
+					<label for="minnademo_checked" class="tag_design checked">みんなでも</label>
+
+					<input type="radio" id="dinner_checked" name="dinner" onchange="tag_effect('dinner')" checked>
+					<label for="dinner_checked" class="tag_design checked">ディナー</label>
+
+					<input type="radio" id="rice_checked" name="rice" onchange="tag_effect('rice')" checked>
+					<label for="rice_checked" class="tag_design checked">米</label>
+
+					<input type="radio" id="noodle_checked" name="noodle" onchange="tag_effect('noodle')" checked>
+					<label for="noodle_checked" class="tag_design checked">麺</label>
+
+					<input type="radio" id="youshoku_checked" name="youshoku" onchange="tag_effect('youshoku')" checked>
+					<label for="youshoku_checked" class="tag_design checked">洋食</label>
+
+					<input type="radio" id="keishoku_checked" name="keishoku" onchange="tag_effect('keishoku')" checked>
+					<label for="keishoku_checked" class="tag_design checked">軽食</label>
+
+					<input type="radio" id="dessert_checked" name="dessert" onchange="tag_effect('dessert')" checked>
+					<label for="dessert_checked" class="tag_design checked">デザート</label>
+
+					<input type="radio" id="forgirl_checked" name="forgirl" onchange="tag_effect('forgirl')" checked>
+					<label for="forgirl_checked" class="tag_design checked">女子向け</label>
+
+					<input type="radio" id="washoku_checked" name="washoku" onchange="tag_effect('washoku')" checked>
+					<label for="washoku_checked" class="tag_design checked">和食</label>
+
+					<!-- <input type="radio" id="asia_checked" name="asia" onchange="tag_effect('asia')" checked>
+					<label for="asia_checked" class="tag_design checked">アジア</label> -->
+
+					<input type="radio" id="speed_checked" name="speed" onchange="tag_effect('speed')" checked>
+					<label for="speed_checked" class="tag_design checked">スピード重視</label>
+
+					<input type="radio" id="kodawari_checked" name="kodawari" onchange="tag_effect('kodawari')" checked>
+					<label for="kodawari_checked" class="tag_design checked">こだわり</label>
+
+					<!-- <input type="radio" id="cashless_checked" name="cashless" onchange="tag_effect('cashless')" checked>
+					<label for="cashless_checked" class="tag_design checked">キャッシュレス</label> -->
+
+					<input type="radio" id="tukemen_checked" name="tukemen" onchange="tag_effect('tukemen')" checked>
+					<label for="tukemen_checked" class="tag_design checked">つけ麺</label>
+
+					<!-- <input type="radio" id="chinese_checked" name="chinese" onchange="tag_effect('chinese')" checked>
+					<label for="chinese_checked" class="tag_design checked">中華</label> -->
+
+					<input type="radio" id="cafe_checked" name="cafe" onchange="tag_effect('cafe')" checked>
+					<label for="cafe_checked" class="tag_design checked">カフェ</label>
+
+					<!-- <input type="radio" id="izakaya_checked" name="izakaya" onchange="tag_effect('izakaya')" checked>
+					<label for="izakaya_checked" class="tag_design checked">大人の料理</label> -->
+
+					<!-- <input type="radio" id="bread_checked" name="bread" onchange="tag_effect('bread')" checked>
+					<label for="bread_checked" class="tag_design checked">パン</label> -->
+
+					<!-- <input type="radio" id="" name="" onchange="tag_effect('')">
+					<label for="" class="tag_design checked"></label> -->
+				</div>
+			</div>
+
+			<div class="layout">
+				<ul class="omiselist">
+
+					<li class="oneomise senenika ekichika hitoridemo dinner rice noodle washoku speed">
+						<a href="omise/katou/katou.html">うどんそば加とう</a>
+						<img src="samune_pic/katou_ikuradon_soba.jpg" class="samune" >
+						<div class="tags">
+							<p>麺</p>
+							<p>和食</p>
+							<p>千円以下</p>
+							<p>駅近</p>
+							<p>一人でも</p>
+							<p>ディナー</p>
+						</div>
+					</li>
+
+					<li class="oneomise senenika ekichika hitoridemo keishoku dessert kodawari cafe">
+						<a href="omise/coffeebunmei/coffeebunmei.html">珈琲文明</a>
+						<img src="samune_pic/coffeebunmei_currypan_applejuice_cheesecake.jpg" class="samune" >
+						<div class="tags">
+							<p>こだわり</p>
+							<p>カフェ</p>
+							<p>千円以下</p>
+							<p>駅近</p>
+							<p>一人でも</p>
+							<p>軽食</p>
+						</div>
+					</li>
+
+					<li class="oneomise senenika ekichika hitoridemo keishoku dessert cafe">
+						<a href="omise/g2cafe/g2cafe.html">G2café</a>
+						<img src="samune_pic/G2cafe_coffee_applepie.jpg" class="samune" >
+						<div class="tags">
+							<p>千円以下</p>
+							<p>カフェ</p>
+							<p>駅近</p>
+							<p>一人でも</p>
+							<p>軽食</p>
+							<p>デザート</p>
+						</div>
+					</li>
+
+					<!-- <li class="oneomise senenika takeout hitoridemo keishoku forgirl bread">
+						<a href="omise/rupan★/">るぱん</a>
+						<img src="samune_pic/rupan_croissant_raisin_croquette_barger_mentai.jpg" class="samune" >
+						<div class="tags">
+							<p>女子向け</p>
+							<p>カフェ</p>
+							<p>千円以下</p>
+							<p>テイクアウト</p>
+						</div>
+					</li> -->
+
+					<li class="oneomise volume tukemen ekichika hitoridemo ramen noodle">
+						<a href="omise/kuriyama/kuriyama.html">くり山</a>
+						<img src="samune_pic/kuriyama_azitamatukemen.jpg" class="samune" >
+						<div class="tags">
+							<p>ボリューム</p>
+							<p>つけ麺</p>
+							<p>駅近</p>
+							<p>一人でも</p>
+							<p>ラーメン</p>
+							<p>麺</p>
+						</div>
+					</li>
+
+					<li class="oneomise senenika ekichika hitoridemo dinner noodle ">
+						<a href="omise/nakaya/nakaya.html">あぶらそば中屋</a>
+						<img src="samune_pic/nakaya_aburasoba.JPG" class="samune" >
+						<div class="tags">
+							<p>麺</p>
+							<p>駅近</p>
+							<p>千円以下</p>
+							<p>一人で</p>
+							<p>ディナー</p>
+						</div>
+					</li>
+
+					<li class="oneomise ku hitoridemo ramen dinner kodawari">
+						<a href="omise/tsumugi/tsumugi.html">紬</a>
+						<img src="samune_pic/tsumugi_shoyu.jpg" class="samune" >
+						<div class="tags">
+							<p>ラーメン</p>
+							<p>こだわり</p>
+							<p>学校近く</p>
+							<p>一人で</p>
+							<p>ディナー</p>
+						</div>
+					</li>
+
+					<li class="oneomise takeout minnademo dinner rice kodawari">
+						<a href="omise/sarisari/sarisari.html">サリサリカリー</a>
+						<img src="samune_pic/sarisari_threecourseset.jpg" class="samune" >
+						<div class="tags">
+							<p>米</p>
+							<p>こだわり</p>
+							<p>テイクアウト</p>
+							<p>みんなで</p>
+							<p>ディナー</p>
+						</div>
+					</li>
+					
+					<li class="oneomise rice youshoku dinner ku forgirl hitoride takeout">
+						<a href="omise/gochiben/gochiben.html">ごちべんSTEAK</a>
+						<img src="samune_pic/gochiben_steakrice.jpg" class="samune" >
+						<div class="tags">
+							<p>洋食</p>
+							<p>一人でも</p>
+							<p>米</p>
+							<p>女子向け</p>
+							<p>テイクアウト</p>
+						</div>
+					</li>
+
+					<!-- <li class="oneomise ">
+						<a href="omise/"></a>
+						<img src="samune_pic/" class="samune" >
+						<div class="tags">
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+					</li> -->
+
+				</ul>
+			</div>
+		</main>
+		
+		<footer>
+			<a href="https://instagram.com/kanagawa.hfe?igshid=YmMyMTA2M2Y=">
+				<p>人間工学研究室 Instagram</p>
+			</a>
+			<a href="https://www.hfe.ie.kanagawa-u.ac.jp/index.php">
+				<p>人間工学研究室 HP</p>
+			</a>
+			<br>
+			<p>&copy; 2023 人間工学研究室</p>
+		</footer>
+
+		<script src="tag_effect.js" charset="utf-8" async></script>
+	</div>
+</body>
+
+</html>
